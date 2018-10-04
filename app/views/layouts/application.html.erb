@@ -19,12 +19,17 @@
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
               <%= link_to "О нас", pages_about_path, class:'nav-item nav-link' %>
-              <a class="nav-item nav-link" href="#">Features</a>
-              <a class="nav-item nav-link" href="#">Pricing</a>
-              <a class="nav-item nav-link disabled" href="#">Disabled</a>
+              <%= link_to "Создать аккаунт", new_user_registration_path, class:'nav-item nav-link' %>
+              <%= link_to "Войти", new_user_session_path, class:'nav-item nav-link' %>
+              <% if user_signed_in? %>
+                 <%= link_to "Выйти", destroy_user_session_path, method: :delete, class:'nav-item nav-link' %>
+              <% end %>
             </div>
           </div>
         </nav>
+
+       
+        
 
       <p class="notice"><%= notice %></p>
       <p class="alert"><%= alert %></p>
