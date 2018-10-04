@@ -1,0 +1,41 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  inventar: 
+  category: MyString
+  name: MyString
+  sdate: MyString
+  expdate: MyString
+  id: MyString
+  img: MyString
+  geo: MyString
+  ksk: MyString
+  ikomek: MyString
+  district: MyString
+  checktimes: 
+  userimg1: MyString
+  usergeo1: MyString
+  userimg2: MyString
+  usergeo2: MyString
+  userimg3: MyString
+  usergeo3: MyString
+
+two:
+  inventar: 
+  category: MyString
+  name: MyString
+  sdate: MyString
+  expdate: MyString
+  id: MyString
+  img: MyString
+  geo: MyString
+  ksk: MyString
+  ikomek: MyString
+  district: MyString
+  checktimes: 
+  userimg1: MyString
+  usergeo1: MyString
+  userimg2: MyString
+  usergeo2: MyString
+  userimg3: MyString
+  usergeo3: MyString

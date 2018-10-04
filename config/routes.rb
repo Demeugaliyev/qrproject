@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :objs
   devise_for :users
   root 'pages#landing'
   get 'pages/about'

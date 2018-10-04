@@ -1,0 +1,107 @@
+<%= form_with(model: obj, local: true) do |form| %>
+  <% if obj.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(obj.errors.count, "error") %> prohibited this obj from being saved:</h2>
+
+      <ul>
+      <% obj.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :inventar %>
+    <%= form.text_field :inventar %>
+  </div>
+
+  <div class="field">
+    <%= form.label :category %>
+    <%= form.text_field :category %>
+  </div>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sdate %>
+    <%= form.text_field :sdate %>
+  </div>
+
+  <div class="field">
+    <%= form.label :expdate %>
+    <%= form.text_field :expdate %>
+  </div>
+
+  <div class="field">
+    <%= form.label :id %>
+    <%= form.text_field :id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :img %>
+    <%= form.text_field :img %>
+  </div>
+
+  <div class="field">
+    <%= form.label :geo %>
+    <%= form.text_field :geo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ksk %>
+    <%= form.text_field :ksk %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ikomek %>
+    <%= form.text_field :ikomek %>
+  </div>
+
+  <div class="field">
+    <%= form.label :district %>
+    <%= form.text_field :district %>
+  </div>
+
+  <div class="field">
+    <%= form.label :checktimes %>
+    <%= form.text_field :checktimes %>
+  </div>
+
+  <div class="field">
+    <%= form.label :userimg1 %>
+    <%= form.text_field :userimg1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :usergeo1 %>
+    <%= form.text_field :usergeo1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :userimg2 %>
+    <%= form.text_field :userimg2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :usergeo2 %>
+    <%= form.text_field :usergeo2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :userimg3 %>
+    <%= form.text_field :userimg3 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :usergeo3 %>
+    <%= form.text_field :usergeo3 %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

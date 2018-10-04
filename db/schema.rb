@@ -10,7 +10,30 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_10_04_180329) do
+ActiveRecord::Schema.define(version: 2018_10_04_205832) do
+
+  create_table "objs", force: :cascade do |t|
+    t.string "inventar"
+    t.string "category"
+    t.string "name"
+    t.string "sdate"
+    t.string "expdate"
+    t.string "ident"
+    t.string "img"
+    t.string "geo"
+    t.string "ksk"
+    t.string "ikomek"
+    t.string "district"
+    t.string "checktimes"
+    t.string "userimg1"
+    t.string "usergeo1"
+    t.string "userimg2"
+    t.string "usergeo2"
+    t.string "userimg3"
+    t.string "usergeo3"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
