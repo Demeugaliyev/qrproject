@@ -1,5 +1,6 @@
 class ObjsController < ApplicationController
   before_action :set_obj, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!, except: [:show]
 
   # GET /objs
   # GET /objs.json
