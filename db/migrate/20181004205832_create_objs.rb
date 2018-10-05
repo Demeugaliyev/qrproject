@@ -6,7 +6,6 @@ class CreateObjs < ActiveRecord::Migration[5.2]
       t.string :name
       t.string :sdate
       t.string :expdate
-      t.integer :id
       t.string :img
       t.string :geo
       t.string :ksk

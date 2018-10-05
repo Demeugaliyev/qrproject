@@ -18,7 +18,6 @@ ActiveRecord::Schema.define(version: 2018_10_04_205832) do
     t.string "name"
     t.string "sdate"
     t.string "expdate"
-    t.integer "id", null: false
     t.string "img"
     t.string "geo"
     t.string "ksk"
